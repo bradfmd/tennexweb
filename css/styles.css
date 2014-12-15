@@ -1,0 +1,1423 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+/*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block
+}
+
+audio, canvas, progress, video {
+    display: inline-block;
+    vertical-align: baseline
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0
+}
+
+[hidden], template {
+    display: none
+}
+
+a {
+    background: transparent
+}
+
+a:active, a:hover {
+    outline: 0
+}
+
+abbr[title] {
+    border-bottom: 1px dotted
+}
+
+b, strong {
+    font-weight: bold
+}
+
+dfn {
+    font-style: italic
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0
+}
+
+mark {
+    background: #ff0;
+    color: #000
+}
+
+small {
+    font-size: 80%
+}
+
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sup {
+    top: -0.5em
+}
+
+sub {
+    bottom: -0.25em
+}
+
+img {
+    border: 0
+}
+
+svg:not(:root) {
+    overflow: hidden
+}
+
+figure {
+    margin: 1em 40px
+}
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0
+}
+
+pre {
+    overflow: auto
+}
+
+code, kbd, pre, samp {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+
+button, input, optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0
+}
+
+button {
+    overflow: visible
+}
+
+button, select {
+    text-transform: none
+}
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer
+}
+
+button[disabled], html input[disabled] {
+    cursor: default
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+    border: 0;
+    padding: 0
+}
+
+input {
+    line-height: normal
+}
+
+input[type="checkbox"], input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0
+}
+
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+    height: auto
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box
+}
+
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em
+}
+
+legend {
+    border: 0;
+    padding: 0
+}
+
+textarea {
+    overflow: auto
+}
+
+optgroup {
+    font-weight: bold
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+td, th {
+    padding: 0
+}
+
+body {
+    background: white;
+    font-family: "news-gothic-std", sans-serif
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+    font-family: "news-gothic-std", sans-serif
+}
+
+h1.title {
+    font-weight: 200
+}
+
+input.parsley-error {
+    border: 1px solid #ffa300
+}
+
+input.parsley-error:focus {
+    border: 1px solid #ffa300
+}
+
+.parsley-errors-list {
+    color: #ffa300
+}
+
+section {
+    *zoom: 1;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+section:before, section:after {
+    content: " ";
+    display: table
+}
+
+section:after {
+    clear: both
+}
+
+header {
+    border-bottom: 1px solid #ededed;
+    background: white;
+    padding: 10px 0
+}
+
+header .logo {
+    image-rendering: optimizeSpeed;
+    float: left
+}
+
+@media screen and (max-width: 840px) {
+    header .logo {
+        float: none
+    }
+}
+
+header .logo img {
+    width: 70px
+}
+
+@media screen and (max-width: 840px) {
+    header .logo img {
+        display: block;
+        margin: 0 auto
+    }
+}
+
+header nav {
+    *zoom: 1;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block
+}
+
+header nav:before, header nav:after {
+    content: " ";
+    display: table
+}
+
+header nav:after {
+    clear: both
+}
+
+header nav ul {
+    float: right;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 80px
+}
+
+@media screen and (max-width: 840px) {
+    header nav ul {
+        height: auto;
+        float: none;
+        max-width: 480px;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        padding: 20px 0 0 0
+    }
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 10px 0;
+    text-transform: uppercase
+}
+
+@media screen and (max-width: 480px) {
+    header nav ul li {
+        display: block;
+        padding: 8px 0;
+        border-bottom: 1px solid #ededed
+    }
+}
+
+header nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #65a2be;
+    font-weight: 400;
+    vertical-align: middle;
+    line-height: 60px
+}
+
+@media screen and (max-width: 840px) {
+    header nav ul li a {
+        line-height: 20px
+    }
+}
+
+header nav ul li a:after {
+    content: '|';
+    padding: 0 10px;
+    font-weight: 200
+}
+
+@media screen and (max-width: 480px) {
+    header nav ul li a:after {
+        content: '';
+        padding: 0
+    }
+}
+
+header nav ul li:nth-child(4) a:after {
+    content: '';
+    padding: 0
+}
+
+@media screen and (max-width: 480px) {
+    header nav ul li:nth-child(4) {
+        border-bottom: none
+    }
+}
+
+#video section {
+    padding: 0 200px
+}
+
+@media screen and (max-width: 840px) {
+    #video section {
+        padding: 0
+    }
+}
+
+#video section iframe {
+    width: 100%
+}
+
+#hero {
+    background: url("../images/section-1-bg.jpg") no-repeat bottom center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 100px 0
+}
+
+@media screen and (max-width: 840px) {
+    #hero {
+        padding: 60px 0;
+        background: url("../images/section-1-bg.jpg") no-repeat center center
+    }
+}
+
+#hero section {
+    text-transform: uppercase;
+    color: white
+}
+
+#hero section .copy-left {
+    display: block;
+    float: left;
+    margin-right: 0%;
+    width: 50%;
+    margin-left: 0%;
+    height: 100px;
+    padding-right: 20px;
+    border-right: 2px solid white
+}
+
+#hero section .copy-left:last-child {
+    margin-right: 0
+}
+
+@media screen and (max-width: 840px) {
+    #hero section .copy-left {
+        border: none;
+        display: block;
+        float: left;
+        margin-right: 0%;
+        width: 100%;
+        height: 100%;
+        padding: 0 10px
+    }
+
+    #hero section .copy-left:last-child {
+        margin-right: 0
+    }
+}
+
+#hero section .copy-left h1 {
+    text-align: right;
+    font-size: 70px;
+    line-height: 60px;
+    padding: 0;
+    margin: 0
+}
+
+@media screen and (max-width: 1110px) {
+    #hero section .copy-left h1 {
+        font-size: 50px;
+        line-height: 50px
+    }
+}
+
+@media screen and (max-width: 840px) {
+    #hero section .copy-left h1 {
+        text-align: center
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #hero section .copy-left h1 {
+        font-size: 40px
+    }
+}
+
+#hero section .copy-left h2 {
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    font-size: 32px
+}
+
+@media screen and (max-width: 1110px) {
+    #hero section .copy-left h2 {
+        font-size: 20px
+    }
+}
+
+@media screen and (max-width: 840px) {
+    #hero section .copy-left h2 {
+        text-align: center;
+        border-bottom: 2px solid white;
+        padding-bottom: 10px
+    }
+}
+
+#hero section .copy-right {
+    display: block;
+    float: left;
+    margin-right: 0%;
+    width: 50%;
+    height: 100px;
+    border-left: 2px solid white;
+    padding-left: 20px
+}
+
+#hero section .copy-right:last-child {
+    margin-right: 0
+}
+
+@media screen and (max-width: 840px) {
+    #hero section .copy-right {
+        border: none;
+        display: block;
+        float: left;
+        margin-right: 0%;
+        width: 100%;
+        height: 100%;
+        text-align: center
+    }
+
+    #hero section .copy-right:last-child {
+        margin-right: 0
+    }
+}
+
+#hero section .copy-right h3 {
+    text-align: left;
+    font-size: 24px;
+    line-height: 34px;
+    margin: 0
+}
+
+@media screen and (max-width: 1110px) {
+    #hero section .copy-right h3 {
+        font-size: 20px;
+        line-height: 28px
+    }
+}
+
+@media screen and (max-width: 840px) {
+    #hero section .copy-right h3 {
+        text-align: center;
+        font-size: 20px;
+        line-height: 28px;
+        padding-top: 10px
+    }
+}
+
+#div-top {
+    background: -webkit-radial-gradient(50% 0%, 50% 10px, #aaa 0%, transparent 100%), url("../images/video.png") no-repeat top center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 400px;
+}
+
+#div-top .bg-image {
+    border-top: 1px solid #adb2b6;
+    background: -webkit-radial-gradient(50% 0%, 50% 10px, #aaa 0%, #fff 100%)
+}
+
+#playIcon {
+    margin-top: 135px;
+}
+
+
+@media screen and (max-width: 1110px) {
+    #div-top {
+        height: 400px
+    }
+    #playIcon{
+        margin-top: 135px;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    #div-top {
+        height: 325px
+    }
+    #playIcon{
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #div-top {
+        height: 280px
+    }
+    #playIcon{
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    #div-4 {
+        height: 200px
+    }
+    #playIcon{
+        margin-top: 50px;
+    }
+}
+
+
+
+
+#div-1 {
+    background: -webkit-radial-gradient(50% 0%, 50% 10px, #aaa 0%, transparent 100%), url("../images/hand.jpg") no-repeat top center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 600px
+}
+
+#div-1 .bg-image {
+    border-top: 1px solid #adb2b6;
+    background: -webkit-radial-gradient(50% 0%, 50% 10px, #aaa 0%, #fff 100%)
+}
+
+@media screen and (max-width: 840px) {
+    #div-1 {
+        display: none
+    }
+}
+
+#div-2 {
+    border-top: 1px solid #adb2b6;
+    background: -webkit-radial-gradient(50% 0%, 50% 10px, #aaa 0%, #fff 100%)
+}
+
+#div-2 section {
+    padding: 40px 0
+}
+
+#div-2 section h1 {
+    display: block;
+    float: left;
+    margin-right: 0%;
+    width: 83.33333%;
+    margin-left: 8.33333%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #65a2be
+}
+
+#div-2 section h1:last-child {
+    margin-right: 0
+}
+
+@media screen and (max-width: 840px) {
+    #div-2 section h1 {
+        display: block;
+        float: left;
+        margin-right: 0%;
+        width: 100%;
+        margin-left: 0%;
+        padding: 0 10px
+    }
+
+    #div-2 section h1:last-child {
+        margin-right: 0
+    }
+}
+
+#div-2 section p {
+    display: block;
+    float: left;
+    margin-right: 0%;
+    width: 83.33333%;
+    margin-left: 8.33333%;
+    text-align: justify;
+    color: #7c868d;
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 0
+}
+
+#div-2 section p span {
+    text-transform: uppercase
+}
+
+#div-2 section p:last-child {
+    margin-right: 0
+}
+
+@media screen and (max-width: 840px) {
+    #div-2 section p {
+        display: block;
+        float: left;
+        margin-right: 0%;
+        width: 100%;
+        margin-left: 0%;
+        padding: 0 10px
+    }
+
+    #div-2 section p:last-child {
+        margin-right: 0
+    }
+}
+
+#div-3 {
+    border-top: 1px solid #adb2b6
+}
+
+#div-3 section {
+    background: -webkit-radial-gradient(50% 0%, 50% 10px, #aaa 0%, #fff 100%);
+    padding: 40px 0
+}
+
+#div-3 section img {
+    width: 75%;
+    display: block;
+    padding-top: 40px;
+    margin: 0 auto
+}
+
+@media screen and (max-width: 840px) {
+    #div-3 section img {
+        padding-top: 20px
+    }
+}
+
+#div-3 section h1 {
+    display: block;
+    float: left;
+    margin-right: 0%;
+    width: 83.33333%;
+    margin-left: 8.33333%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #65a2be;
+    padding: 0 60px
+}
+
+#div-3 section h1:last-child {
+    margin-right: 0
+}
+
+@media screen and (max-width: 840px) {
+    #div-3 section h1 {
+        display: block;
+        float: left;
+        margin-right: 0%;
+        width: 100%;
+        margin-left: 0%;
+        padding: 0 10px
+    }
+
+    #div-3 section h1:last-child {
+        margin-right: 0
+    }
+}
+
+#div-3 section h1.title {
+    display: block;
+    float: left;
+    margin-right: 0%;
+    width: 100%;
+    margin-left: 0%;
+    text-align: left;
+    padding: 0;
+    font-weight: 200
+}
+
+#div-3 section h1.title:last-child {
+    margin-right: 0
+}
+
+#div-3 section h2 {
+    display: block;
+    float: left;
+    margin-right: 0%;
+    width: 83.33333%;
+    margin-left: 8.33333%;
+    text-align: justify;
+    text-transform: uppercase;
+    color: #65a2be;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0 40px;
+    font-size: 22px
+}
+
+#div-3 section h2:last-child {
+    margin-right: 0
+}
+
+@media screen and (max-width: 840px) {
+    #div-3 section h2 {
+        display: block;
+        float: left;
+        margin-right: 0%;
+        width: 100%;
+        margin-left: 0%;
+        padding: 0 10px;
+        font-size: 18px
+    }
+
+    #div-3 section h2:last-child {
+        margin-right: 0
+    }
+}
+
+#div-3 section p {
+    display: block;
+    float: left;
+    margin-right: 0%;
+    width: 83.33333%;
+    margin-left: 8.33333%;
+    text-align: justify;
+    color: #7c868d;
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 5px;
+    padding: 0 40px
+}
+
+#div-3 section p span {
+    text-transform: uppercase
+}
+
+#div-3 section p:last-child {
+    margin-right: 0
+}
+
+@media screen and (max-width: 840px) {
+    #div-3 section p {
+        display: block;
+        float: left;
+        margin-right: 0%;
+        width: 100%;
+        margin-left: 0%;
+        padding: 0 10px
+    }
+
+    #div-3 section p:last-child {
+        margin-right: 0
+    }
+}
+
+#div-4 {
+    padding: 40px 0;
+    background: #65a2be;
+    box-shadow: inset 0px 11px 40px -10px black, inset 0px -11px 40px -10px black
+}
+
+#div-4 .head {
+    min-height: 800px;
+    background: url("../images/penny.png") no-repeat top center;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%
+}
+
+@media screen and (max-width: 1110px) {
+    #div-4 .head {
+        min-height: 740px
+    }
+}
+
+@media screen and (max-width: 840px) {
+    #div-4 .head {
+        min-height: 600px
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #div-4 .head {
+        min-height: 460px
+    }
+}
+
+@media screen and (max-width: 540px) {
+    #div-4 .head {
+        min-height: 360px
+    }
+}
+
+#div-4 .head header {
+    display: block;
+    float: left;
+    margin-right: 0%;
+    width: 66.66667%;
+    margin-left: 16.66667%;
+    margin-top: 25%;
+    padding: 20px;
+    text-align: center;
+    z-index: 10;
+    color: #ffa300;
+    text-transform: uppercase;
+    background: white;
+    opacity: .85
+}
+
+@media screen and (max-width: 840px) {
+    #div-4 .head header {
+        display: block;
+        float: left;
+        margin-right: 0%;
+        width: 100%;
+        margin-left: 0%
+    }
+
+    #div-4 .head header:last-child {
+        margin-right: 0
+    }
+}
+
+#div-4 .head header:last-child {
+    margin-right: 0
+}
+
+#div-4 .head header h1 {
+    font-size: 50px;
+    padding: 0;
+    margin: 0
+}
+
+@media screen and (max-width: 1110px) {
+    #div-4 .head header h1 {
+        font-size: 36px;
+        line-height: 36px
+    }
+}
+
+@media screen and (max-width: 840px) {
+    #div-4 .head header h1 {
+        font-size: 24px;
+        line-height: 24px
+    }
+}
+
+#div-4 .head header h1 span {
+    font-size: 36px;
+    padding: 0;
+    margin: 0
+}
+
+@media screen and (max-width: 1110px) {
+    #div-4 .head header h1 span {
+        font-size: 26px;
+        line-height: 26px
+    }
+}
+
+@media screen and (max-width: 840px) {
+    #div-4 .head header h1 span {
+        font-size: 18px;
+        line-height: 18px
+    }
+}
+
+#div-4 p {
+    display: block;
+    float: left;
+    margin-right: 0%;
+    width: 83.33333%;
+    margin-left: 8.33333%;
+    text-align: justify;
+    color: white;
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 5px;
+    padding: 20px 40px
+}
+
+#div-4 p:last-child {
+    margin-right: 0
+}
+
+@media screen and (max-width: 840px) {
+    #div-4 p {
+        display: block;
+        float: left;
+        margin-right: 0%;
+        width: 100%;
+        margin-left: 0%;
+        padding: 0 10px;
+        font-size: 18px
+    }
+
+    #div-4 p:last-child {
+        margin-right: 0
+    }
+}
+
+#div-5 {
+    padding: 40px 0;
+    background: white
+}
+
+#div-5 section img.comp {
+    display: block;
+    margin: 0 auto;
+    width: 65%
+}
+
+#div-5 section h1 {
+    display: block;
+    float: left;
+    margin-right: 0%;
+    width: 100%;
+    margin-left: 0%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #65a2be;
+    padding: 0 60px;
+    margin: 20px 0 0 0
+}
+
+#div-5 section h1:last-child {
+    margin-right: 0
+}
+
+@media screen and (max-width: 840px) {
+    #div-5 section h1 {
+        display: block;
+        float: left;
+        margin-right: 0%;
+        width: 100%;
+        margin-left: 0%;
+        padding: 0 10px;
+        font-size: 18px
+    }
+
+    #div-5 section h1:last-child {
+        margin-right: 0
+    }
+}
+
+#div-5 section h1.title {
+    display: block;
+    float: left;
+    margin-right: 0%;
+    width: 100%;
+    margin-left: 0%;
+    text-align: left;
+    padding: 0;
+    margin-bottom: 20px
+}
+
+#div-5 section h1.title:last-child {
+    margin-right: 0
+}
+
+#div-5 section h2 {
+    padding: 0 60px;
+    text-align: center;
+    color: #7c868d;
+    font-weight: 200;
+    margin-bottom: 40px
+}
+
+@media screen and (max-width: 840px) {
+    #div-5 section h2 {
+        font-size: 20px !important
+    }
+}
+
+#div-5 section figure {
+    border-right: 1px solid #adb2b6;
+    margin: 0;
+    display: block;
+    float: left;
+    margin-right: 0%;
+    width: 25%;
+    text-align: center
+}
+
+#div-5 section figure.last {
+    border: none
+}
+
+#div-5 section figure i {
+    font-size: 80px;
+    width: 100px;
+    color: #65a2be;
+    padding: 20px;
+    margin: 0;
+    text-align: center
+}
+
+#div-5 section figure:last-child {
+    margin-right: 0
+}
+
+@media screen and (max-width: 840px) {
+    #div-5 section figure {
+        display: block;
+        float: left;
+        margin-right: 0%;
+        width: 100%;
+        margin-left: 0%;
+        padding: 0 10px;
+        font-size: 18px
+    }
+
+    #div-5 section figure:last-child {
+        margin-right: 0
+    }
+}
+
+#div-5 section figure p {
+    padding: 0 20px;
+    height: 80px;
+    color: #adb2b6;
+    font-size: 18px !important
+}
+
+@media screen and (max-width: 840px) {
+    #div-5 section figure p {
+        border: none;
+        font-size: 24px !important;
+        line-height: 30px !important;
+        color: white;
+        background: #65a2be;
+        padding: 20px 10px;
+        height: 100%
+    }
+}
+
+#div-5 section figure p.last {
+    border: none
+}
+
+@media screen and (max-width: 840px) {
+    #div-5 section figure p.last {
+        border-top: 4px solid #adb2b6;
+        border-bottom: 4px solid #adb2b6
+    }
+}
+
+#div-6 {
+    background: white;
+    border-top: 1px solid #adb2b6;
+    background: -webkit-radial-gradient(50% 0%, 50% 10px, #aaa 0%, #fff 100%);
+    padding: 40px 0 0 0
+}
+
+#div-6 #message {
+    min-height: 400px
+}
+
+#div-6 section {
+    background: url("../images/mag-glass.png") no-repeat bottom left;
+    -webkit-background-size: 35%;
+    -moz-background-size: 35%;
+    -o-background-size: 35%;
+    background-size: 35%
+}
+
+@media screen and (max-width: 840px) {
+    #div-6 section {
+        background: none
+    }
+}
+
+#div-6 .content {
+    display: block;
+    float: left;
+    margin-right: 0%;
+    width: 66.66667%;
+    margin-left: 33.33333%
+}
+
+#div-6 .content:last-child {
+    margin-right: 0
+}
+
+@media screen and (max-width: 840px) {
+    #div-6 .content {
+        display: block;
+        float: left;
+        margin-right: 0%;
+        width: 100%;
+        margin-left: 0%;
+        padding: 0 10px
+    }
+
+    #div-6 .content:last-child {
+        margin-right: 0
+    }
+}
+
+#div-6 .content h1 {
+    color: #65a2be;
+    text-transform: uppercase;
+    padding: 0 20px
+}
+
+#div-6 .content h2 {
+    color: #ffa300;
+    text-transform: uppercase;
+    padding: 0 20px;
+    text-align: center
+}
+
+#div-6 .content p {
+    text-align: left;
+    color: #adb2b6;
+    font-size: 24px;
+    line-height: 34px;
+    padding: 0 20px
+}
+
+#div-6 .content form {
+    display: block;
+    float: left;
+    margin-right: 0%;
+    width: 100%
+}
+
+#div-6 .content form:last-child {
+    margin-right: 0
+}
+
+#div-6 .content form fieldset {
+    border: none
+}
+
+#div-6 .content form fieldset ul {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+#div-6 .content form fieldset ul li {
+    display: inline-block;
+    display: block;
+    float: left;
+    margin-right: 0%;
+    width: 50%;
+    padding: 10px
+}
+
+#div-6 .content form fieldset ul li:last-child {
+    margin-right: 0
+}
+
+@media screen and (max-width: 840px) {
+    #div-6 .content form fieldset ul li {
+        display: block;
+        float: left;
+        margin-right: 0%;
+        width: 100%;
+        padding: 0 10px
+    }
+
+    #div-6 .content form fieldset ul li:last-child {
+        margin-right: 0
+    }
+}
+
+#div-6 .content form fieldset ul li.textarea {
+    display: block;
+    float: left;
+    margin-right: 0%;
+    width: 100%
+}
+
+#div-6 .content form fieldset ul li.textarea:last-child {
+    margin-right: 0
+}
+
+#div-6 .content form fieldset ul li label {
+    display: block;
+    color: #65a2be;
+    text-transform: uppercase;
+    padding: 5px 0;
+    font-size: 18px
+}
+
+#div-6 .content form fieldset ul li input {
+    display: block;
+    float: left;
+    margin-right: 0%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px
+}
+
+#div-6 .content form fieldset ul li input:last-child {
+    margin-right: 0
+}
+
+#div-6 .content form fieldset ul li textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border-radius: 3px
+}
+
+#div-6 .content form fieldset .submit-button {
+    float: right;
+    margin-right: 10px;
+    padding: 10px 0
+}
+
+#div-6 .content form fieldset .submit-button input {
+    border: 1px solid #3782a4;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 0 0 #a0c0cf;
+    color: white;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: bold;
+    background-color: #65a2be;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #65a2be), color-stop(100%, #3b8bb0));
+    background-image: -webkit-linear-gradient(#65a2be, #3b8bb0);
+    background-image: linear-gradient(#65a2be, #3b8bb0);
+    padding: 7px 18px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #2c789b;
+    background-clip: padding-box;
+    text-transform: uppercase;
+    font-size: 18px
+}
+
+#div-6 .content form fieldset .submit-button input:hover:not(:disabled) {
+    box-shadow: inset 0 1px 0 0 #7eaabf;
+    cursor: pointer;
+    background-color: #5895b2;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #5895b2), color-stop(100%, #3882a3));
+    background-image: -webkit-linear-gradient(#5895b2, #3882a3);
+    background-image: linear-gradient(#5895b2, #3882a3)
+}
+
+#div-6 .content form fieldset .submit-button input:active:not(:disabled) {
+    border: 1px solid #3782a4;
+    box-shadow: inset 0 0 8px 4px #357897, inset 0 0 8px 4px #357897, 0 1px 1px 0 #eeeeee
+}
+
+#div-6 .content form fieldset .submit-button input:disabled {
+    opacity: 0.5;
+    cursor: not-allowed
+}
+
+footer {
+    background: #65a2be
+}
+
+footer ul {
+    list-style: none;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 0
+}
+
+@media screen and (max-width: 840px) {
+    footer ul li {
+        display: block
+    }
+}
+
+footer ul li img {
+    padding: 10px 0
+}
+
+footer ul li.tennex {
+    border-right: 4px solid white;
+    padding-right: 22px
+}
+
+@media screen and (max-width: 840px) {
+    footer ul li.tennex {
+        border: none;
+        padding: 0
+    }
+}
+
+footer ul li.tennex img {
+    height: 45px
+}
+
+footer ul li.phone {
+    padding-left: 20px
+}
+
+@media screen and (max-width: 840px) {
+    footer ul li.phone {
+        border: none;
+        padding: 0
+    }
+}
+
+footer ul li.phone img {
+    height: 45px
+}
+
+footer ul li.number {
+    height: 45px;
+    position: relative
+}
+
+footer ul li.number a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    vertical-align: middle;
+    line-height: 45px;
+    display: table-cell;
+    padding-left: 10px
+}
+
+@media screen and (max-width: 840px) {
+    footer ul li.number a {
+        text-align: center;
+        display: block;
+        padding: 0
+    }
+}
+
+@media screen and (max-width: 840px) {
+    #div-1 h1, #div-2 h1, #div-3 h1, #div-4 h1, #div-5 h1, #div-6 h1 {
+        text-align: center !important;
+        font-size: 22px !important;
+        line-height: 28px !important
+    }
+}
+
+@media screen and (max-width: 840px) {
+    #div-1 h1.title, #div-2 h1.title, #div-3 h1.title, #div-4 h1.title, #div-5 h1.title, #div-6 h1.title {
+        font-size: 30px
+    }
+}
+
+@media screen and (max-width: 840px) {
+    #div-1 h2, #div-2 h2, #div-3 h2, #div-4 h2, #div-5 h2, #div-6 h2 {
+        font-size: 14px !important;
+        line-height: 28px !important;
+        padding: 0 10px !important
+    }
+}
+
+@media screen and (max-width: 840px) {
+    #div-1 p, #div-2 p, #div-3 p, #div-4 p, #div-5 p, #div-6 p {
+        text-align: center !important;
+        font-size: 16px !important;
+        line-height: 22px !important
+    }
+}
+
+
+/***** MODAL PROPERTIES *****/
+
+
+//**************//

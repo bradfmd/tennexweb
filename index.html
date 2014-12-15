@@ -1,0 +1,288 @@
+<!doctype html>
+<!--[if lt IE 7]><html lang="en" class="ie ie6 ltie9 ltie8 ltie7"><![endif]-->
+<!--[if IE 7]><html lang="en" class="ie ie7 ltie9 ltie8"><![endif]-->
+<!--[if IE 8]><html lang="en" class="ie ie8 ltie9"><![endif]-->
+<!--[if IE 9]><html lang="en" class="ie ie9"><![endif]-->
+<!--[if gt IE 9]><html lang="en" class="ie"><![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+	<!--[if IE]><![endif]-->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!--[if IE]>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<![endif]-->
+
+	<title>Tennex</title>
+  <link href="images/icons/favicon.ico" rel="icon" type="image/ico" />
+  <link rel="apple-touch-icon" type="image/png" href="images/images/icons/apple-touch-icon.jpg" />
+  <link rel="apple-touch-icon" sizes="57x57" type="image/png" href="images/icons/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="72x72" type="image/png" href="images/icons/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" type="image/png" href="images/icons/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" type="image/png" href="images/icons/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" type="image/png" href="images/icons/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" type="image/png" href="images/icons/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" type="image/png" href="images/icons/apple-touch-icon-152x152.png" />
+  <link rel="apple-touch-icon-precomposed" type="image/png" href="images/images/icons/apple-touch-icon.jpg" />
+	<link href="css/styles.css" media="screen" rel="stylesheet" type="text/css" />
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="js/parsley.min.js" type="text/javascript"></script>
+  <script src="js/jquery.fitvids.js" type="text/javascript"></script>
+  <script src="js/main.js" type="text/javascript"></script>
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(["_setAccount", "UA-43637421-1"]);
+  _gaq.push(["_setDomainName", "tennexllc.com"]);
+  _gaq.push(["_trackPageview"]);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<script>
+		jQuery('body:not(.js)').addClass('js');
+
+        $(document).ready(function () {
+          $('#link').click(function () {
+            var src = 'http://www.youtube.com/embed/2bDxqFuT6uU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0;autoplay=1';
+            $('#videoModal').modal('show');
+            $('#videoModal iframe').attr('src', src);
+          });
+          $('#videoModal').on('hidden.bs.modal', function(e){
+            $('#videoModal iframe').removeAttr('src');
+          })
+        });
+
+	</script>
+
+	<div id="wrapper">
+		<header>
+  <section>
+    <div class='logo'>
+      <img src="images/tennex-logo.png" />
+    </div>
+    <nav>
+      <ul>
+        <li>
+          <a href="#div-3">what we do</a>
+        </li>
+        <li>
+          <a href="#div-5">how we do it</a>
+        </li>
+        <li>
+          <a href="#div-6">contact us</a>
+        </li>
+        <li>
+          <a href="https://www.tennexllc.com/app/">Login</a>
+        </li>
+      </ul>
+    </nav>
+  </section>
+</header>
+
+<div id='div-top'>
+  <div style="width: 100px; margin: auto;">
+    <a href="#" id="link" style="color: #3d950b; font-size: 150px; margin-top: 260px;opacity: .75; ">
+      <i id="playIcon" class="fa fa-youtube-play"></i>
+    </a>
+  </div>
+</div>
+
+
+
+<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div>
+      <iframe allowfullscreen='' frameborder='0' height='400' width='711' src=''></iframe>
+    </div>
+  </div>
+</div>
+
+<!--<div id='video'>-->
+  <!--<section>-->
+    <!--<iframe allowfullscreen='' frameborder='0' height='400' src='http://www.youtube.com/embed/2bDxqFuT6uU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0' width='711'></iframe>-->
+  <!--</section>-->
+<!--</div>-->
+
+
+<!--<div id='hero'>-->
+  <!--<section>-->
+    <!--<div class='copy-left'>-->
+      <!--<h1>a revolution</h1>-->
+      <!--<h2>in supply chain management</h2>-->
+    <!--</div>-->
+    <!--<div class='copy-right'>-->
+      <!--<h3>powerful, practical, decision-making software that reveals waste throughout the supply chain</h3>-->
+    <!--</div>-->
+  <!--</section>-->
+<!--</div>-->
+
+<div id='div-2'>
+  <section>
+    <h1>a revolution in supply chain management</h1>
+    <p>
+      <span>
+        tennex is a highly advanced tool
+      </span>
+      whose purpose is to produce real visibility into the myriad costs in your supply chain and return dramatic efficiencies. Our results are not the theoretical. They are real, measurable, and mathematically provable. We provide a single, comprehensive platform that identifies every cost in the supply chain. From this, our team charts a new path to never-before-seen cost reductions and lasting efficiencies.
+    </p>
+  </section>
+</div>
+<div id='div-1'>
+  <div class='bg-image'></div>
+  <section></section>
+</div>
+<div id='div-3'>
+  <section>
+    <h1 class='title'>what we do</h1>
+    <img src="images/maze.jpg" />
+    <h1>
+      we reveal the unknown and chart a clear path to never before seen cost reductions
+    </h1>
+    <p>
+      <span>there is a reason no one has tried to do what we do: it can’t be done.</span>
+      Finding the absolute, most efficient solution is mathematically impossible. There are thousands of variables in your supply chain. Changing any one of them has implications that reverberate up and down the chain with consequences for all the other variables. Mathematicians call it an “NP Hard” problem, which means that with all the existing computer power on earth and all the known time in the universe the problem cannot be solved with a 100% degree of accuracy. For most, that would be a good reason to pursue other business models. Not us. We were stubborn enough to keep after the impossible. And in that, we discovered something revolutionary: while an absolutely perfect answer is unattainable, a 99% solution is not. And finding it uncovers millions of dollars in savings. We’re practical people. We will gladly trade the status and gratification of an academic solution for the real-world value of never-before-seen efficiencies for our clients.
+    </p>
+  </section>
+</div>
+<div id='div-4'>
+  <section>
+    <div class='head'>
+      <header>
+        <h1>
+          <span>
+            There are pennies hidden inside
+          </span>
+          <br>
+          every Penny you spend.
+        </h1>
+      </header>
+    </div>
+    <p>
+      The competitive bid process allows you to negotiate pennies worth of savings. Tennex allows you to find millions of dollars in efficiencies. Within each of the known pennies you spend, there a thousands of unknown, hidden costs. We break up those costs and optimize your spend. Our expectation is not to simply return incremental savings. Our expectation is to return a ten-fold reduction in costs.
+    </p>
+  </section>
+</div>
+<div id='div-5'>
+  <section>
+    <h1 class='title'>How we do it</h1>
+    <img class="comp" src="images/computer.png" />
+    <h1>
+      Our proprietary software models the entire industry
+    </h1>
+    <h2>
+      looks deeper into all of the opportunities for efficiency, and maps an optimimal production path
+    </h2>
+    <figure>
+      <i class="fa fa-code-fork"></i>
+      <p>
+        We map the most optimized path for your material spend.
+      </p>
+    </figure>
+    <figure>
+      <i class="fa fa-trash-o"></i>
+      <p>
+        We eliminate waste in scale, logistics, variance, tolerance, packing, labor and scrap.
+      </p>
+    </figure>
+    <figure>
+      <i class="fa fa-lightbulb-o"></i>
+      <p>
+        We illuminate all of the costs hidden within.
+      </p>
+    </figure>
+    <figure class='last'>
+      <i class="fa fa-unlock-alt"></i>
+      <p>
+        We unlock every variable in your supply chain.
+      </p>
+    </figure>
+  </section>
+</div>
+<div id='div-6'>
+  <section>
+    <div class='content'>
+      <h1>
+        Contact Us
+      </h1>
+      <p>
+        To learn more or to give us a chance to prove our performance to you, please call Craig Wyatt at 855.789.2313, or complete and submit the contact form below.
+      </p>
+      <div id='contact_form'>
+        <form name="insightly_web_to_contact" action="https://tennex.insight.ly/WebToContact/Create" method="post">
+          <input type="hidden" name="formId" value="IagyGILP8YbAmFFfAK5pIw=="/>
+
+          <fieldset>
+            <ul>
+              <li>
+                <label for="insightly_firstName">First Name* </label>
+                <input class='text' id="insightly_firstName" name="FirstName" type="text"/>
+              </li>
+              <li>
+                <label for="insightly_lastName">Last Name* </label>
+                <input class='text' id="insightly_lastName" name="LastName" type="text"/>
+              </li>
+              <li>
+                <label for='company'>Company</label>
+                <input class='text' id="insightly_organization" name="Organization" type="text"/>
+              </li>
+              <li>
+                <label for='position'>Position</label>
+                <input class='text' id="insightly_role" name="Role" type="text"/>
+              </li>
+              <li>
+                <label for='phone'>Phone*</label>
+                <input type="hidden" name="phones[0].Label" value="Work"/>
+                <input class='text' id="phones[0]_Value" name="phones[0].Value" type="text"/>
+              </li>
+              <li>
+                <label for='email'>email*</label>
+                <input type="hidden" name="emails[0].Label" value="Work"/>
+                <input class='text' id="emails[0]_Value" name="emails[0].Value" type="text"/>
+              </li>
+              <li class='textarea'>
+                <label for='comment'>Comments</label>
+                <textarea id="insightly_background" name="background"></textarea>
+              </li>
+            </ul>
+            <div class='submit-button'>
+              <input class='button' type='submit' value='Submit'>
+            </div>
+          </fieldset>
+
+        </form>
+      </div>
+    </div>
+  </section>
+</div>
+<footer>
+  <section>
+    <div class='content'>
+      <ul>
+        <li class='tennex'>
+          <img src="images/tennex-logo-footer.png" />
+        </li>
+        <li class='phone'>
+          <img src="images/phone.png" />
+        </li>
+        <li class='number'>
+          <a href="tel:+8557892313">855.789.2313</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+</footer>
+
+	</div>
+</body>
+</html>
