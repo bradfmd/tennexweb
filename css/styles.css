@@ -516,12 +516,14 @@ header nav ul li:nth-child(4) a:after {
 }
 
 #div-top {
-    background: -webkit-radial-gradient(50% 0%, 50% 10px, #aaa 0%, transparent 100%), url("../images/video.png") no-repeat top center;
+    background: -webkit-radial-gradient(50% 0%, 50% 10px, #aaa 0%, transparent 100%);
+    background: url('../images/video.png') no-repeat top center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     height: 400px;
+    display: block;
 }
 
 #div-top .bg-image {
