@@ -49,21 +49,6 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<script>
-		jQuery('body:not(.js)').addClass('js');
-
-        $(document).ready(function () {
-          $('#link').click(function () {
-            var src = 'http://www.youtube.com/embed/2bDxqFuT6uU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0;autoplay=1';
-            $('#videoModal').modal('show');
-            $('#videoModal iframe').attr('src', src);
-          });
-          $('#videoModal').on('hidden.bs.modal', function(e){
-            $('#videoModal iframe').removeAttr('src');
-          })
-        });
-
-	</script>
 
 	<div id="wrapper">
 		<header>
@@ -92,40 +77,14 @@
 
 <div id='div-top'>
   <div style="width: 100px; margin: auto;">
-    <a href="#" id="link" style="color: #3d950b; font-size: 150px; margin-top: 260px;opacity: .75; ">
+    <a href="https://fast.wistia.net/embed/iframe/nmtxr3thhr?popover=true"
+       class="wistia-popover[height=529,playerColor=7b796a,width=940]"
+       style="color: #3d950b; font-size: 150px; margin-top: 260px;opacity: .75; ">
       <i id="playIcon" class="fa fa-youtube-play"></i>
     </a>
+    <script charset="ISO-8859-1" src="https://fast.wistia.com/assets/external/popover-v1.js"></script>
   </div>
 </div>
-
-
-
-<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
-  <div class="modal-dialog">
-    <div>
-      <iframe allowfullscreen='' frameborder='0' height='400' width='711' src=''></iframe>
-    </div>
-  </div>
-</div>
-
-<!--<div id='video'>-->
-  <!--<section>-->
-    <!--<iframe allowfullscreen='' frameborder='0' height='400' src='http://www.youtube.com/embed/2bDxqFuT6uU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0' width='711'></iframe>-->
-  <!--</section>-->
-<!--</div>-->
-
-
-<!--<div id='hero'>-->
-  <!--<section>-->
-    <!--<div class='copy-left'>-->
-      <!--<h1>a revolution</h1>-->
-      <!--<h2>in supply chain management</h2>-->
-    <!--</div>-->
-    <!--<div class='copy-right'>-->
-      <!--<h3>powerful, practical, decision-making software that reveals waste throughout the supply chain</h3>-->
-    <!--</div>-->
-  <!--</section>-->
-<!--</div>-->
 
 <div id='div-2'>
   <section>
@@ -138,10 +97,7 @@
     </p>
   </section>
 </div>
-<!--<div id='div-1'>-->
-  <!--<div class='bg-image'></div>-->
-  <!--<section></section>-->
-<!--</div>-->
+
 <div id='div-3'>
   <section>
     <h1 class='title'>what we do</h1>
