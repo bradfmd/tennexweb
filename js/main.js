@@ -1,1 +1,10 @@
-$(function(){$("a[href*=#]:not([href=#])").click(function(){if(location.pathname.replace(/^\//,"")==this.pathname.replace(/^\//,"")&&location.hostname==this.hostname){var t=$(this.hash);if(t=t.length?t:$("[name="+this.hash.slice(1)+"]"),t.length)return $("html,body").animate({scrollTop:t.offset().top},1e3),!1}})}),$(function(){$("#contact_form form").submit(function(t){if(t.preventDefault(),$(this).parsley().isValid()){var e=$("input#first_name").val(),a=$("input#last_name").val(),n=$("input#company").val(),i=$("input#position").val(),o=$("input#phone").val(),s=$("input#email").val(),l=$("textarea#comment").val(),m="First Name="+e+"&Last Name="+a+"&Company="+n+"&Position="+i+"&Email="+s+"&Phone="+o+"&Comments="+l;return $.ajax({type:"POST",url:"https://tennex-mailer.herokuapp.com/",data:m,dataType:"text",success:function(){$("#contact_form").html("<div id='message'></div>"),$("#message").html("<h1>Contact Form Submitted!</h1>").hide().fadeIn(1500,function(){$("#message").append("<h2>We will be in touch soon.</h2>")})}}),!1}console.log("false")})}),$(document).ready(function(){$("#video").fitVids()});
+
+n () {
+	  $("a[href*=#]:not([href=#])").click(function () {
+		      if (location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") && location.hostname == this.hostname) {
+		        var t = $(this.hash);
+	        if (t = t.length ? t : $("[name=" + this.hash.slice(1) + "]"), t.length)return $("html,body").animate({scrollTop: t.offset().top}, 1e3), !1
+		      }
+	    })
+});
+
